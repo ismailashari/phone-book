@@ -19,7 +19,7 @@ class ContactList extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  padding: const EdgeInsets.only(left: 30),
                   child: Image.asset(
                     'images/contact_icon.png',
                     width: 45,
@@ -31,19 +31,25 @@ class ContactList extends StatelessWidget {
                   children: [
                     // ignore: avoid_unnecessary_containers
                     Container(
+                      padding: const EdgeInsets.only(left: 15),
                       child: const Text(
-                        'Namaa',
+                        'Alexander Arnold',
                         style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.w500,
+                          fontSize: 16,
                         ),
                       ),
                     ),
                     // ignore: avoid_unnecessary_containers
                     Container(
+                      padding: const EdgeInsets.only(left: 15),
                       child: const Text(
-                        '123',
-                        style: TextStyle(color: Color(0xFF707070)),
+                        '+62 1234 5678 910',
+                        style: TextStyle(
+                          color: Color(0xFF707070),
+                          fontSize: 14,
+                        ),
                       ),
                     )
                   ],
